@@ -1,0 +1,98 @@
+nomer 1
+#include <iostream>
+using namespace std;
+int main(){
+  int a, b;
+  //clrscr;
+  for(a=1; a<=5; a++) {
+    for(b=1; b<=6; b++) {
+      cout << a << " ";
+    }
+    cout << endl;
+  } 
+  return 0;
+}
+
+nomer 2
+#include <iostream>
+using namespace std;
+
+int main(){
+  cout << "Contoh Program Pengulangan"<< endl;
+    for(int a = 1; a < 11; a++){
+        printf("%i\n", a);
+    }
+
+  cout << "Perulangan Menurun" << endl;
+  for(int counter = 10; counter > 0; counter--){
+    printf("%i\n", counter);
+}
+    return 0;
+}
+
+nomer 3
+#include <iostream>
+using namespace std;
+
+int main(){
+  int b;
+  cout << "~~ Program C++ Segitiga Bintang ~~" << endl;
+  cout << "==================================" << endl;
+
+  cout << "Input tinggi segitiga;";
+  cin >> b;
+  int i,j,k;
+  cout << b;
+  cout << endl;
+
+for (i=1; i<=b; i++){
+   for (j=1; j<=i; j++){
+      cout <<"";
+    } 
+    for (k=1; k<=i; k++){
+      cout << " *";
+    }
+    cout << endl;
+  }
+  return 0;
+}
+
+nomer 4
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+  cout << "##  Program C++ Angka Prima  ##" << endl;
+  cout << "===============================" << endl;
+  cout << endl;
+ 
+  int n,i;
+  bool angka_prima = true;
+ 
+  cout << "Input satu angka bulat: ";
+  cin >> n;
+ 
+  // 0 dan 1 bukan angka prima
+  if (n == 0 || n == 1) {
+    angka_prima = false;
+  }
+  else {
+    for (i = 2; i <= n / 2; i++) {
+      if (n % i == 0) {
+        angka_prima = false;
+        break;
+      }
+    }
+  }
+ 
+  cout << endl;
+  if (angka_prima)
+    cout << n << " adalah angka prima";
+  else
+    cout << n << " bukan angka prima";
+ 
+ cout << endl;
+ return 0;
+}
